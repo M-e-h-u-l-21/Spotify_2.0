@@ -1,25 +1,20 @@
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import Bar from "../components/Bar";
+import { TouchableOpacity } from "react-native";
+import RecentPlays from "../components/RecentPlays";
+import RecentCard from "../components/RecentCard";
+import TopBar from "../components/TopBar";
+import PickedTemplate from "../components/PickedTemplate";
 
 const HomeScreen = () => {
   return (
-    <View className="flex-1 bg-black pt-20">
-      <View className="flex-row px-6 ">
-        <Image
-          source={{
-            uri: "https://links.papareact.com/wru",
-          }}
-          height={40}
-          width={40}
-        />
-        <Bar text="All" />
-        <Bar text="Music" />
-        {/* <Bar text="Podcasts & Shows"/> */}
-      </View>
+    <View className="bg-black pt-12 flex-1">
+        <TopBar/>
+        <RecentPlays/>
+        <PickedTemplate/>
     </View>
   );
 };
 
 export default HomeScreen;
-
