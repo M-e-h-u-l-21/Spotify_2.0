@@ -14,7 +14,7 @@ const PickedTemplate = () => {
           <EllipsisVerticalIcon size={32} color="#aaaaaa" />
         </TouchableOpacity>
       </View>
-      <PickedCard/>
+      <PickedCard />
     </View>
   );
 };
